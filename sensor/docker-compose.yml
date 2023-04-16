@@ -1,0 +1,7 @@
+services:
+  bas-sensor:
+    build: .
+    container_name: bas-sensor
+    hostname: bas-sensor
+    ports:
+      - 5000:5000
