@@ -12,8 +12,8 @@ services:
       SERVERNAME: modsec2-apache
       BACKEND: http://bas-sensor:5000/
       PORT: "80"
-      MODSEC_RULE_ENGINE: DetectionOnly
-      BLOCKING_PARANOIA: 2
+      MODSEC_RULE_ENGINE: "On"
+      BLOCKING_PARANOIA: 1
       TZ: "${TZ}"
       ERRORLOG: "/var/log/error.log"
       ACCESSLOG: "/var/log/access.log"
